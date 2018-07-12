@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="5a68d87a-512a-4d73-b930-0aa480b298f9" isOneWay="false" action="" name="getItemByTitle" bindingOperationName="getItemByTitle" type="Request-Response" outputName="getItemByTitleResponse" inputName="getItemByTitle" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="5a68d87a-512a-4d73-b930-0aa480b298f9fileName">getItemByTitle</con:setting></con:settings><con:call id="dbd4d451-e733-4366-934b-9142b278b5c7" name="getItemByTitle Request"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://parabank.parasoft.com/parabank/services/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:book="http://bookstore.parasoft.com/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <book:getItemByTitle>\r
+         <!--Optional:-->\r
+         <titleKeyword>?</titleKeyword>\r
+      </book:getItemByTitle>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://bookstore.parasoft.com/Bookstore/getItemByTitle"/><con:environmentSpec><con:entry environmentId="6922d432-1f3b-4ff5-a010-4412a2cca66b"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:call><con:environmentSpec><con:entry environmentId="6922d432-1f3b-4ff5-a010-4412a2cca66b"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:operation>

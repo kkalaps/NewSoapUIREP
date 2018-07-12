@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="fde0ab4f-fd02-499f-ad06-e6d1e0cb8046" isOneWay="false" action="" name="getItemsInCart" bindingOperationName="getItemsInCart" type="Request-Response" outputName="getItemsInCartResponse" inputName="getItemsInCart" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="fde0ab4f-fd02-499f-ad06-e6d1e0cb8046fileName">getItemsInCart</con:setting></con:settings><con:call id="a3c254aa-f48f-467a-8452-6d7676d6079e" name="getItemsInCart Request"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://parabank.parasoft.com/parabank/services/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:book="http://bookstore.parasoft.com/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <book:getItemsInCart>\r
+         <cartId>?</cartId>\r
+      </book:getItemsInCart>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://bookstore.parasoft.com/Bookstore/getItemsInCart"/><con:environmentSpec><con:entry environmentId="6922d432-1f3b-4ff5-a010-4412a2cca66b"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:call><con:environmentSpec><con:entry environmentId="6922d432-1f3b-4ff5-a010-4412a2cca66b"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:operation>

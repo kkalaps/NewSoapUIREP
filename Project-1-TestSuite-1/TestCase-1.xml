@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="f344cc06-7856-4338-b95a-c6e20fa18a79" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 1" searchProperties="true" timeout="0" maxResults="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="f344cc06-7856-4338-b95a-c6e20fa18a79fileName">TestCase-1</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="request" name="SOAP Request" id="b1615cfb-6f80-4523-bb0b-2004085133fc"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BookstoreSoapBinding</con:interface><con:operation>addNewItemToInventory</con:operation><con:request name="SOAP Request" id="dae80f66-3650-49b7-aa6e-04351b0bab21"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://parabank.parasoft.com/parabank/services/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:book="http://bookstore.parasoft.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <book:addNewItemToInventory>
+         <!--Optional:-->
+         <book>
+            <id>143</id>
+            <!--Optional:-->
+            <name>Red</name>
+            <!--Optional:-->
+            
+            <stockQuantity>25</stockQuantity>
+            <!--Zero or more repetitions:-->
+            <authors>nani</authors>
+            <!--Optional:-->
+            <description>test</description>
+            <!--Optional:-->
+            <ISBN>test</ISBN>
+            <!--Optional:-->
+            <publicationDate>2018-06-23</publicationDate>
+            <!--Optional:-->
+            <publisher>Test</publisher>
+         </book>
+      </book:addNewItemToInventory>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="77a07a92-6281-464d-aee2-47372722af78"/><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/><con:environmentSpec><con:entry environmentId="6922d432-1f3b-4ff5-a010-4412a2cca66b"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:request></con:config></con:testStep><con:testStep type="request" name="SOAP Request gert" id="20fd0a87-cb72-4584-ab03-2420258232e2"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BookstoreSoapBinding</con:interface><con:operation>getItemById</con:operation><con:request name="SOAP Request gert" id="f4392cf0-120b-43ef-ba10-9dcd4c8e6b19"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://parabank.parasoft.com/parabank/services/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:book="http://bookstore.parasoft.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <book:getItemById>
+         <id>143</id>
+      </book:getItemById>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="3f1f1191-ec2e-4796-b0b8-ceee73fe6cd1"/><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/><con:environmentSpec><con:entry environmentId="6922d432-1f3b-4ff5-a010-4412a2cca66b"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:request></con:config></con:testStep><con:testStep type="request" name="SOAP Requestt" id="17e985dc-be53-4863-84bb-edf43a4996ea"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BookstoreSoapBinding</con:interface><con:operation>getItemByTitle</con:operation><con:request name="SOAP Requestt" id="a2ab06c2-e3c1-48c9-89c4-eb44f3ea31b8"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://parabank.parasoft.com/parabank/services/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:book="http://bookstore.parasoft.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <book:getItemByTitle>
+         <!--Optional:-->
+         <titleKeyword>S</titleKeyword>
+      </book:getItemByTitle>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="1d2ad481-a7fd-490e-9697-35fc0449fdc6"/><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/><con:environmentSpec><con:entry environmentId="6922d432-1f3b-4ff5-a010-4412a2cca66b"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:request></con:config></con:testStep><con:testStep type="request" name="SOAP Request2" id="991542af-2730-412f-a950-9ea8acd43d53"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BookstoreSoapBinding</con:interface><con:operation>addItemToCart</con:operation><con:request name="SOAP Request2" id="ed9a6a23-6717-499e-a446-e66213eb3f70"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://parabank.parasoft.com/parabank/services/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:book="http://bookstore.parasoft.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <book:addItemToCart>
+         <!--Optional:-->
+         <cartId>111</cartId>
+         <itemId>143</itemId>
+         <quantity>5</quantity>
+      </book:addItemToCart>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="c38f766a-baae-4d41-909e-2ed1538b601c"/><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/><con:environmentSpec><con:entry environmentId="6922d432-1f3b-4ff5-a010-4412a2cca66b"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:request></con:config></con:testStep><con:properties/><con:reportParameters/><con:environmentSpec><con:entry environmentId="6922d432-1f3b-4ff5-a010-4412a2cca66b"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:testCase>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="0b06436b-abc8-4750-848c-e298f04313b6" isOneWay="false" action="" name="addNewItemToInventory" bindingOperationName="addNewItemToInventory" type="Request-Response" outputName="addNewItemToInventoryResponse" inputName="addNewItemToInventory" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="0b06436b-abc8-4750-848c-e298f04313b6fileName">addNewItemToInventory</con:setting></con:settings><con:call id="91a4925c-3807-4724-8eb4-ac034f6b55d9" name="addNewItemToInventory Request"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://parabank.parasoft.com/parabank/services/store-01</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:book="http://bookstore.parasoft.com/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <book:addNewItemToInventory>\r
+         <!--Optional:-->\r
+         <book>\r
+            <id>?</id>\r
+            <!--Optional:-->\r
+            <name>?</name>\r
+            <!--Optional:-->\r
+            <price>?</price>\r
+            <stockQuantity>?</stockQuantity>\r
+            <!--Zero or more repetitions:-->\r
+            <authors>?</authors>\r
+            <!--Optional:-->\r
+            <description>?</description>\r
+            <!--Optional:-->\r
+            <ISBN>?</ISBN>\r
+            <!--Optional:-->\r
+            <publicationDate>?</publicationDate>\r
+            <!--Optional:-->\r
+            <publisher>?</publisher>\r
+         </book>\r
+      </book:addNewItemToInventory>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://bookstore.parasoft.com/Bookstore/addNewItemToInventory"/><con:environmentSpec><con:entry environmentId="6922d432-1f3b-4ff5-a010-4412a2cca66b"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:call><con:environmentSpec><con:entry environmentId="6922d432-1f3b-4ff5-a010-4412a2cca66b"><con:authProfile>Inherit From Parent</con:authProfile></con:entry></con:environmentSpec></con:operation>
