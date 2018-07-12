@@ -6,5 +6,5 @@ BookstoreSoapBinding\getItemsInCart.xml
 BookstoreSoapBinding\submitOrder.xml
 BookstoreSoapBinding\updateItemInCart.xml
 Project-1-TestSuite-1\TestCase-1.xml
-TestCase-1-LoadTest.xml
 TestCase-1-LoadTest-1.xml
+TestCase-1-LoadTest.xml
